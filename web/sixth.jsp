@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <style>
   body {
-  background-image: url("pattern1.jpg");
+  background-color: white;
  
 }
 .form {
@@ -58,7 +58,7 @@ session.setAttribute("message4", message4);
              <p>5. Your feedback to strengthen the BINA network ?</p>
              <br>
 
-            <textarea name="message5" placeholder="        Love to hear from you."></textarea>
+            <textarea name="message5" placeholder=""></textarea>
 
             
 

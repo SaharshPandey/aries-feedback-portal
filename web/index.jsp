@@ -9,7 +9,7 @@
 
 <style>
  body {
-  background-image: url("pattern1.jpg");
+  background-color: white;
   font-family: cursive,sans-serif,serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -80,25 +80,25 @@ body:before {
 ::-webkit-input-placeholder {
    text-align: center;
    color:    #aaa;
-   font-size: 6px;
+   font-size: 14px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    text-align: center;  
    color: #aaa;
-   font-size: 6px;
+   font-size: 14px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    text-align: center;  
    color: #aaa;
-   font-size: 6px;
+   font-size: 14px;
 }
 
 :-ms-input-placeholder {  
    text-align: center; 
    color: gray;
-   font-size: 6px;
+   font-size: 14px;
 }
 </style>
 

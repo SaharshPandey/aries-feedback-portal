@@ -10,7 +10,7 @@
 
 <style>
  body {
-  background-image: url("pattern1.jpg");
+  background-color: white;
   
 }
 .form {

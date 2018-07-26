@@ -45,8 +45,8 @@
 String result;
 
 //Reciever's email ID needed...
-String to= "amazingsaharsh@gmail.com";
-
+String to1= "amazingsaharsh@gmail.com";
+//String to2=Peter.DeCat@oma.be;
 // Sender's email ID needs to be mentioned
 String from="apollotooldevelopers@gmail.com";
 
@@ -109,7 +109,7 @@ String port="587";
     //Writing into File that contains all the feedback given by the user...
     FileWriter filewriter=null;
     try{
-          String file = "C:/Users/Shurru/Documents/NetBeansProjects/feedback-Form/feedback.txt";
+          String file = "C:/Users/Shurru/Documents/NetBeansProjects/ARIES Site Project/feedback-Form/feedback.txt";
           filewriter = new FileWriter(file, true);
           filewriter.append(feedback);
           //Just for appearance..
@@ -154,7 +154,9 @@ String port="587";
       
       // Set To: header field of the header.
       message.addRecipient(Message.RecipientType.TO,
-                               new InternetAddress(to));
+                               new InternetAddress(to1));
+      message.addRecipient(Message.RecipientType.TO,
+                               new InternetAddress("sjoshiaries@gmail.com"));
       // Set Subject: header field
       message.setSubject("New Feedback Registered!");
       
@@ -164,10 +166,12 @@ String port="587";
       
       // Send message
       Transport.send(message);
+      out.println("<br><br><br><br>");
       result = "Thanks for your Feedback";
    } catch (MessagingException mex) {
       mex.printStackTrace();
-      result = "Error submitting Feedback ";
+      out.println("<br><br><br><br>");
+      result = "Check your Internet Connection ";
    }
    
   
